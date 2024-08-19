@@ -299,7 +299,8 @@ ul {
   width: 100%;
 }
 .about-item2 {
-  display: inline-block;
+}
+.about-item2__relative {
   position: relative;
 }
 .about-link {
