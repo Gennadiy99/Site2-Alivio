@@ -38,6 +38,9 @@ ul {
   margin: 0 auto;
 }
 .header {
+  max-width: 1920px; /* проба изменение разметки*/
+  width: 100%; /* проба изменение разметки*/
+  margin: 0 auto;
   margin-top: 85px;
   padding-top: 175px;
   min-height: 895px;
@@ -81,8 +84,9 @@ ul {
 }
 /* navbar */
 .navbar {
-  max-width: 1920px;
-  width: 100%;
+  max-width: 1920px; /* проба изменение разметки*/
+  width: 100%; /* проба изменение разметки*/
+  margin: 0 auto; /* проба изменение разметки*/
   background-color: #ffffff;
   position: fixed;
   top: 0;
@@ -105,10 +109,9 @@ ul {
   font-size: 20px;
   color: #292929;
 }
-.navbar-item3{
+.navbar-item3 {
   display: flex;
   align-items: center;
-
 }
 .navbar-link {
   text-decoration: none;
@@ -131,6 +134,9 @@ ul {
 }
 /* release */
 .release {
+  max-width: 1920px; /* проба изменение разметки*/
+  width: 100%; /* проба изменение разметки*/
+  margin: 0 auto; /* проба изменение разметки*/
   padding-top: 169px;
   padding-bottom: 49px;
 }
@@ -256,6 +262,9 @@ ul {
 }
 /* section about */
 .about {
+  max-width: 1920px; /* проба изменение разметки*/
+  width: 100%; /* проба изменение разметки*/
+  margin: 0 auto; /* проба изменение разметки*/
   background-color: var(--bgcolor);
 }
 .about-container {
@@ -317,6 +326,9 @@ ul {
 }
 /* product */
 .product {
+  max-width: 1920px; /* проба изменение разметки*/
+  width: 100%; /* проба изменение разметки*/
+  margin: 0 auto; /* проба изменение разметки*/
   padding-top: 119px;
   padding-bottom: 165px;
 }
@@ -416,6 +428,9 @@ ul {
 }
 /* footer */
 .footer {
+  max-width: 1920px; /* проба изменение разметки*/
+  width: 100%; /* проба изменение разметки*/
+  margin: 0 auto; /* проба изменение разметки*/
   background-color: var(--bgcolor);
   padding-top: 102px;
   padding-bottom: 84px;
