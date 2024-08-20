@@ -76,15 +76,17 @@ ul {
   border: none;
   background: var(--Highlight-color);
   cursor: pointer;
-
   font-weight: 400;
   font-size: 20px;
   text-align: center;
   color: #fff;
 }
+.btn:hover {
+  background-color: #07ddf9;
+}
 /* navbar */
 .navbar {
-  max-width: 1920px; /* проба изменение разметки*/
+  max-width: 1920px; /*проба изменение разметки*/
   width: 100%; /* проба изменение разметки*/
   margin: 0 auto; /* проба изменение разметки*/
   background-color: #ffffff;
@@ -92,6 +94,8 @@ ul {
   top: 0;
   left: 0;
   z-index: 20;
+  left: 50%; /*Отодвигаем блок на 50% влев от лев края */
+  transform: translateX(-50%); /*Сдвигаем блок на 50% влево от центра */
 }
 .navbar-logo {
   display: inline-block;
@@ -273,6 +277,8 @@ ul {
   margin: 0 auto;
   padding-top: 229px;
   padding-bottom: 173px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .about-flex {
   display: flex;
@@ -398,7 +404,6 @@ ul {
   list-style-type: disc; /* Восстанавливает маркеры */
   padding-left: 20px;
   margin: 0;
-  /* padding-top: 15.93px; */
 }
 .card-list li {
   padding-top: 15.93px;
@@ -453,4 +458,83 @@ ul {
 .footer-list li a:hover {
   color: var(--Highlight-color);
   cursor: pointer;
+}
+.navbar-item3 a:hover {
+  color: var(--Highlight-color);
+}
+.menu-mobile {
+  display: none;
+  max-width: 150px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* Медиазапросы */
+@media screen and (max-width: 1370px) {
+  .navbar-flex {
+    justify-content: space-around;
+  }
+  .navbar-logo {
+    display: inline-block;
+    margin-right: 0px;
+  }
+  .header {
+    padding-left: 20px;
+  }
+  .menu-flex {
+    margin-right: 0px;
+  }
+  .release-head__flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 139px;
+  }
+  .release-main__flex {
+    gap: 5px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .container-release {
+    padding-right: 24px;
+  }
+  .about-flex {
+    flex-wrap: wrap;
+    gap: 23px;
+    padding: 0 20px;
+  }
+  .footer {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .menu-flex {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 570px) {
+  .navbar-flex {
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .release {
+    padding-top: 55px;
+  }
+  .about-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer {
+    padding-top: 52px;
+    padding-bottom: 40px;
+  }
+  .footer-list li {
+    margin-bottom: 35px;
+  }
 }
